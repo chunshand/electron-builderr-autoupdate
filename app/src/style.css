@@ -1,0 +1,33 @@
+*, html, body {
+  padding: 0;
+  margin: 0;
+
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(233deg, #8B8BF0 4%, #FA7C7C 101%);
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(153px);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+}
